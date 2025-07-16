@@ -1,76 +1,90 @@
-body {
-  font-family: Arial, sans-serif;
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
   text-align: center;
+  padding: 2rem 1rem;
+  background-color: #161b22;
+  color: #fff;
+  border-radius: 12px;
+  margin-bottom: 2rem;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-header nav ul li {
+header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+main {
+  display: grid;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-box {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+}
+
+.service-box h2 {
+  color: #111;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.service-box p {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
   display: inline-block;
-  margin-right: 20px;
-}
-
-header nav a {
-  color: #fff;
+  padding: 0.75rem 1.2rem;
   text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
-.hero {
-  background-image: linear-gradient(to bottom, #333, #555);
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp:hover {
+  background-color: #1ebf59;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 1rem;
+  background: #161b22;
   color: #fff;
-}
-
-section {
-  padding: 2em;
-}
-
-h1, h2 {
-  margin-bottom: 1em;
-}
-
-.service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.service-card {
-  background-color: #f7f7f7;
-  padding: 1em;
-  margin: 1em;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.testimonial-card {
-  background-color: #f7f7f7;
-  padding: 1em;
-  margin: 1em;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 12px;
 }
